@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --fcolor: rgb(28, 176, 152);
+    --scolor: rgb(47, 42, 85);
+    --tcolor: rgb(239, 246, 254);
+}
+/* ------------------------------- btn for all------------------------------------- */
+.btn {
+    background-color: var(--fcolor) !important;
+    color: white !important;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.line {
+    display: block;
+    margin-top: 10px;
+    height: 5px;
+    width: 18%;
+    background-color: var(--fcolor);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+/* ----------------------------------------nav-------------------------------------- */
+.navbar {
+    position: fixed !important;
+    z-index: 11111111 !important;
+}
+.navbar .navbar-brand img {
+    padding-top: 12px;
+}
+.navbar .navbar-nav .nav-item .nav-link , .dropdown-menu .dropdown-item {
+    font-size: 17px;
+    padding: 12px;
+    color: var(--scolor);
+    position: relative;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover,.dropdown-menu .dropdown-item:hover {
+    color: var(--fcolor);
+}
+.navbar .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--fcolor);
+    transition: .4s;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::before {
+    width: 100%;
+}
+.navbar form  .modal .modal-footer .btn:nth-child(2){
+    background-color: black !important;
+}
+/* ---------------------------------main-------------------------------------------- */
+main .carousel-inner .carousel-item {
+    height: 100vh;
+    width: 100% !important;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+main .carousel-inner .carousel-item::after {
+    position: absolute;
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.447);
+}
+main .carousel-inner .carousel-item1 {
+    background-image: url('../Images/slider-img1.jpg');
+}
+main .carousel-inner .carousel-item2 {
+    background-image: url('../Images/slider-img2.jpg');
+}
+main .carousel-inner .carousel-item3 {
+    background-image: url('../Images/slider-img3.webp');
+}
+main .carousel-inner .carousel-item .carousel-caption {
+    position: absolute;
+    padding: 35px 0;
+    width: 60%;
+    background-color: rgba(28, 176, 151, 0.372);
+    border-radius: 7px;
+    z-index: 1;
+    margin: auto;
+}
+main .icons {
+    position: fixed;
+    z-index: 1;
+    top: 40%;
+    right: 0;
+}
+main .icons a i {
+    color: var(--fcolor);
+}
+.icons a i:hover {
+    color: var(--scolor);
+}
+/* ---------------------------------offer----------------------------------------------- */
+.offer {
+    background-image: url("https://thepixelcurve.com/html/upstudy/upstudy/assets/images/bg/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.offer .offer-item {
+    border: 1px solid var(--scolor);
+    padding: 40px 0 !important;
+    transition: .2s;
+}
+.offer .offer-item:hover {
+    transform: scale(1.03);
+}
+.offer .offer-item .offer-icon {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: var(--fcolor);
+}
+.offer .offer-item h4 {
+    color:var(--scolor);
+}
+/* ------------------------------------------more-section------------------------------------------------------ */
+.more-section .accordion-button {
+    color: var(--scolor);
+}
+.more-section .accordion-collapse {
+    color: var(--fcolor);
+}
+/* --------------coupon-------------------------------------------------------------------------------------- */
+.coupon , .coupon #basic-addon2 {
+    position: relative;
+}
+.coupon .coupon-title span , .coupon .card-title a {
+    color: var(--fcolor);
+}
+.coupon .card-body p,.coupon .card-body .cart {
+    color: var(--scolor);
+}
+.coupon #basic-addon2:after {
+    position: absolute;
+    content: "Copy";
+    top: 40px;
+    font-weight: 500;
+    right: -35px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: var(--scolor);
+    background-color: var(--tcolor);
+    display: none;
+}
+.coupon #basic-addon2:hover:after {
+    display: block;
+}
+/* ------------------------f-section-------------------------------- */
+.f-section {
+    background-image: url("../Images/online-programming-course.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 300px;
+    width: 100%;
+}
+/*--------------------------------------------- course------------------------------- */
+.course .card {
+    position: relative;
+}
+.course .card::after, .course .card::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    transition: .5s;
+}
+.course .card:hover::after,.course .card:hover::before {
+    height: 100%;
+    width: 100%;
+}
+.course .card::after {
+    top: 0;
+    left: 0;
+    background-color: rgba(239, 246, 254, 0.226);
+}
+.course .card::before {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(28, 176, 151, 0.098);
+}
+.course .card-title-l span {
+    color: var(--fcolor);
+}
+.f2-section {
+    background-image: url("../Images/f2.jpg");
+    color: var(--scolor);
+}
+/* -------------------------------------------Team------------------------------------------------- */
+.our-team .team {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    transition: 1s;
+}
+.our-team .team1 {
+    background-image: url('../Images/team-1.jpg');
+}
+.our-team .team2 {
+    background-image: url('../Images/team-2.jpg');
+}
+.our-team .team3 {
+    background-image: url('../Images/team-3.jpg');
+}
+.our-team .team::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.621);
+    border-radius: 5px;
+}
+.our-team .team:hover {
+    transform: scale(0.95);
+}
+.our-team .team:hover::after {
+    background-color: rgba(28, 176, 151, 0.489);
+}
+/* ---------------------------------------Podcast--------------------------------------------- */
+.podcast .podcast-title {
+    position: relative;
+}
+.podcast-title::after {
+    position: absolute;
+    display: block;
+    margin: auto;
+    content: "";
+    top: 50px;
+    left: 28%;
+    height: 5px;
+    width: 40%;
+    background-color: var(--fcolor);
+    border-radius: 5px;
+}
+.podcast .card {
+    background-color: var(--tcolor);
+    overflow: hidden;
+}
+.podcast .card .card-body {
+    color: var(--scolor);
+    text-align: justify;
+}
+.podcast .card .card-body .podcast-icon {
+    color: var(--fcolor);
+}
+.podcast .card .card-body span {
+    background-color: rgba(28, 176, 151, 0.096);
+}
+.podcast .card .card-body span:hover {
+    background-color: var(--scolor);
+    color: white;
+}
+.podcast .card .card-title {
+    color: var(--scolor);
+    position: relative;
+}
+.podcast .card .podcast-card-img1 {
+    clip-path: polygon(1% -5%, 72% -15%, 49% 142%, -17% 158%);
+    transition: 0.5s;
+}
+.podcast .card .podcast-card-img2 {
+    clip-path: polygon(15% -2%, 100% 0%, 111% 100%, 40% 113%);
+    transition: 0.5s;
+}
+.podcast .card:hover .podcast-card-img {
+    transform: scale(1.06);
+}
+.podcast .card:hover .line {
+    width: 20%;
+}
+/* -------------------------join---------------------------------- */
+.join .line {
+    width: 10%;
+}
+.join .join-item1 {
+    background-color: var(--scolor);
+    color: white;
+}
+.join a {
+    color: var(--fcolor);
+}
+.join .join-item1 a i {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.join .join-item1:hover a i {
+    background-color: var(--tcolor);
+}
+/* --------------------------------------footer------------------------------------------ */
+footer .list-group .list-group-item{
+    background-color: var(--tcolor);
+    transition: 1s;
+}
+footer .list-group .list-group-item a{
+    color: var(--scolor);
+}
+footer .list-group .list-group-item:hover{
+    transform: translatex(10px);
+}
+footer .list-group .list-group-item:hover a{
+    color: var(--fcolor);
+}
+/* ------------------------------------------@media------------------------------------------------- */
+@media(max-width:1200px) {
+    .f-section .btn {
+        width: 32% !important;
+    }
+    .course .course-title {
+        width: 50% !important;
+    }
+    .our-team .team {
+        width: 100% !important;
+    }
+    .podcast .podcast-title{
+        width: 50% !important;
+    }
+    .podcast .podcast-card-img img{
+        height: 400px !important;
+    }
+}
+@media(max-width:991px) {
+    .navbar .navbar-nav .nav-item .nav-link:hover::before {
+        width: 0;
+    }
+    main .carousel-inner .carousel-item .carousel-caption {
+        width: 90%;
+        left: 4.5%;
+        padding: 35px 10px;
+    }
+    .offer .offer-item {
+        padding: 10px 15px !important;
+    }
+    .more-section .img-col {
+        margin-top: 20px;
+    }
+    .coupon .coupon-title {
+        width: 50% !important;
+    }
+    .coupon .card {
+        width: 100% !important;
+    }
+    .f-section .btn {
+        width: 30% !important;
+    }
+    .course .course-title {
+        width: 50% !important;
+    }
+    .course .card {
+        width: 100% !important;
+    }
+    /* --------------------------f2-section------------------------------- */
+    .f2-section {
+        background-image: url('https://demos.codezeel.com/wordpress/WP02/WP039/wp-content/uploads/2023/01/video-img.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        height: 300px;
+        width: 100%;
+    }
+    /* ---------------------------Podcast---------------------------------- */
+    .podcast {
+        width: 100% !important;
+    }
+    .podcast .podcast-content .podcast-img {
+        clip-path: 0 !important;
+    }
+    .podcast .podcast-title {
+        width: 100% !important;
+        margin-bottom: 70px !important;
+    }
+    .podcast .card {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .podcast .card .podcast-card-img img {
+        width: 100% !important;
+        height: 350px;
+    }
+    .podcast .card .card-body {
+        margin-left: 0 !important;
+    }
+    .podcast .card .card-body span {
+        margin-left: 20px;
+    }
+    .podcast .card .card-body .card-footer-icons {
+        text-align: center;
+    }
+    .podcast .card {
+        margin-bottom: 30px !important;
+    }
+    .podcast .podcast-title{
+        width: 50% !important;
+    }
+    .podcast .podcast-card-img img{
+        height: 450px !important;
+        }
+    .podcast .card .podcast-card-img1 ,  .podcast .card .podcast-card-img2{
+        clip-path: none;
+    }
+    .line {
+        width: 40%;
+    }
+    .podcast .card:hover .line {
+        width: 45%;
+    }
+    .join .join-title {
+        width: 100% !important;
+    }
+    .join .join-item1{
+        width: 100%;
+        margin: auto !important;
+        margin-bottom: 10px !important;
+    }
+}
+@media(max-width:576px) {
+    .coupon .coupon-title {
+        width: 80% !important;
+    }
+    .coupon .card {
+        width: 80% !important;
+    }
+    .f-section .btn {
+        width: 55% !important;
+    }
+    .course .course-title {
+        width: 70% !important;
+    }
+    .course .card {
+        width: 80% !important;
+    }
+    /* ---------------------------our-team---------------------------------- */
+    .our-team .team {
+        width: 80% !important;
+    }
+    .join .line {
+        margin-bottom: 25px !important;
+        width: 25%;
+    }
+    .join .join-item1 a i {
+        background-color: var(--tcolor);
+        font-size: 40px !important;
+    }
+    .card-footer-icons{
+        display: flex;
+    }
+    .podcast .podcast-title {
+        width: 100% !important;
+        margin-bottom: 70px !important;
+    }
+}

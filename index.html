@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>UPSTUDY</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg shadow w-100 bg-white">
+        <div class="container">
+            <a class="navbar-brand align-self-center" href="#"><img src="Images/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav1">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- -------------------------------nav-item------------------------ -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bolder" aria-current="page" href="#">Home</a>
+                    </li>
+                    <!-- -------------------------------nav-item------------------------ -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bolder" data-bs-auto-close="outside" href="#"
+                            data-bs-toggle="dropdown" aria-expanded="false"> Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fw-medium" href="#">Product Type</a></li>
+                            <li class="dropend"><a class="dropdown-item fw-medium dropdown-toggle" href="#"  data-bs-toggle="dropdown">Shop Page</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-medium" href="#">Check Out</a></li>
+                                    <li><a class="dropdown-item fw-medium" href="#">Cart</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            <li><a class="dropdown-item fw-medium" href="#">Downloads</a></li>
+                            <li><a class="dropdown-item fw-medium" href="#">Your Account</a></li>
+                        </ul>
+                    </li>
+                    <!-- -------------------------------nav-item------------------------ -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder" href="#">Gallery</a>
+                    </li>
+                    <!-- -------------------------------nav-item------------------------ -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bolder" href="#" data-bs-toggle="dropdown">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fw-medium" href="#">UI/UX</a></li>
+                            <li><a class="dropdown-item fw-medium" href="#">Front End</a></li>
+                            <li><a class="dropdown-item fw-medium" href="#">Back End</a></li>
+                            <li><a class="dropdown-item fw-medium" href="#">Full Stack</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item fw-medium" href="#">Java</a></li>
+                        </ul>
+                    </li>
+                    <!-- -------------------------------nav-item------------------------ -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder" href="#">pages</a>
+                    </li>
+                </ul>
+                <!-- -------------------------------FORM------------------------ -->
+                <form class="d-flex">
+                    <div class="input-group me-2">
+                        <input type="text" class="form-control" placeholder="Search.......">
+                        <button type="submit" class="btn fw-medium">Search</button>
+                    </div>
+                    <button type="button" class="btn btn-log fw-medium " data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="loginModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: rgb(28, 176, 152); color: white;">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label"
+                                                style="font-size: 17px; font-weight: 500; color: rgb(28, 176, 152);">Email:</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter Your Email" style="border-color:rgb(28, 176, 152) ;">
+                                            <div id="email" class="form-text">We'll never share your email with anyone else. </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="pass" class="form-label"
+                                                style="font-size: 17px; font-weight: 500; color: rgb(28, 176, 152);">Password:</label>
+                                            <input type="password" class="form-control" id="pass"
+                                                placeholder="Enter Your Password"
+                                                style="border-color:rgb(28, 176, 152) ;">
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="mySwitch" value="yes" checked>
+                                            <label class="form-check-label" for="mySwitch">Remember Me</label>
+                                        </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn  me-auto" data-bs-dismiss="modal">Login</button>
+                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> <!-----/container----->
+    </nav><!-----/nav----->
+    <!-- ------------------------------main Section--------------------------- -->
+    <main>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-item1 active w-100">
+                    <div class="carousel-caption">
+                        <h1>Learn something new.</h1>
+                        <h6> Build skills with courses.</h6>
+                        <button class="btn btn-caption mt-2 text-white fw-bolder" type="button">Discover</button>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item2  w-100">
+                    <div class="carousel-caption">
+                        <h1>Online learning platform.</h1>
+                        <h6> Build skills with courses.</h6>
+                        <button class="btn btn-caption mt-2 text-white fw-bolder" type="button">Discover</button>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item3  w-100">
+                    <div class="carousel-caption">
+                        <h1>Develop new things.</h1>
+                        <h6> Build skills with courses.</h6>
+                        <button class="btn btn-caption mt-2 text-white fw-bolder" type="button">Discover</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div> <!-- carousel -->
+        <div class="icons fs-2 bg-white p-2 opacity-75 rounded-start">
+            <a href="#" class="d-block"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="d-block"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="d-block"><i class="fa-brands fa-linkedin"></i></a>
+        </div> <!-- /icons -->
+    </main><!-- /main -->
+    <!-- ----------------------------about-platform--------------------------- -->
+    <section class="about-platform">
+        <div class="container">
+            <div class="platform-content mt-3 mb-3 p-5 text-white rounded text-center">
+                <h2 class="fs-1 fw-bolder mb-3" style="color: rgb(28, 176, 152);">Who we are</h2>
+                <p class="fs-6 fw-medium w-100 mx-auto" style="color:rgb(47, 42, 85);">An online learning community that
+                    offers classes for creative and curious people.</p>
+                <button class="btn fw-medium" type="button">Discover</button>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------offer------------------------------ -->
+    <section class="offer py-5">
+        <div class="container text-center">
+            <div class="offer-header">
+                <h5 class="mb-3" style="color: rgb(47, 42, 85);">What we offer</h5>
+                <h2 class="fs-1 mb-4 fw-bolder" style="color:rgb(28, 176, 152)">For Your Future Learning</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 p-2 ">
+                    <div class="offer-item  rounded-top rounded-bottom">
+                        <i class=" d-block mb-3 fs-3 offer-icon fa-solid fa-book-open-reader text-white mx-auto "></i>
+                        <h4 class="fw-medium">Online Courses</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 p-2 ">
+                    <div class="offer-item  rounded-top rounded-bottom">
+                        <i class=" d-block mb-3 fs-3 offer-icon fa-solid fa-user text-white mx-auto"></i>
+                        <h4 class="fw-medium">Expert Trainer</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 p-2">
+                    <div class="offer-item  rounded-top rounded-bottom">
+                        <i class=" d-block mb-3 fs-3 offer-icon fa-solid fa-certificate text-white mx-auto"></i>
+                        <h4 class="fw-medium">Get Certificate</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 p-2">
+                    <div class="offer-item  rounded-top rounded-bottom">
+                        <i class=" d-block mb-3 fs-3 offer-icon fa-regular fa-clock text-white mx-auto"></i>
+                        <h4 class="fw-medium">Life Time Access</h4>
+                    </div>
+                </div>
+            </div><!-----/Row----->
+        </div> <!-----/Container----->
+    </section>
+     <!-- -----------------------------more-section--------------------------- -->
+    <div class="more-section mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6  p-1">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">UI/UX</button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse fw-medium"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">UI/UX design is the process of creating user interfaces and user
+                                    experiences for digital products. It involves aspects such as layout, color,
+                                    typography,interaction, feedback, and usability.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">Front End</button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse fw-medium"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Front end web development is the practice of building the
+                                    visible parts of a website or web application using HTML, CSS, and JavaScript.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">Back End</button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse fw-medium"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Backend web development is the practice of building the
+                                    hidden parts of a website or web application using server-side languages and technologies.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">Full Stack</button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse fw-medium"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Full stack web development is the combination of both front end
+                                    and backend web development. It involves being able to work with both the client-side
+                                    and the server-side of a website
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6  p-1">
+                    <div class="img-col w-100">
+                        <img src="Images/why-choose-us.png"
+                        class="w-100"alt="online-courses">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------coupon------------------------------- -->
+    <section class="coupon mt-4" style="padding-top: 100px;">
+        <div class="container text-center">
+            <h2 class="fs-1 fw-bolder mb-4 w-25 rounded border-end border-bottom border-3 mx-auto coupon-title mb-5" style="background-color: rgb(239, 246, 254);color: rgb(47, 42, 85);padding: 7px;">
+                coupons <span><i class="fa-solid fa-gifts"></i></span>
+            </h2>
+            <div class="row">
+                <div class="col-md-4  p-1 mb-2">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course1.jpg" class="card-img-top" alt="course1">
+                        <div class="card-body" style="color: rgb(47, 42, 85);">
+                            <h5 class="card-title fs-4 fw-bolder mb-3"><a href="#" class="text-decoration-none">Front End</a></h5>
+                            <div class="rate d-flex justify-content-between mb-2 ">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                                </div>
+                                <a href="#" class="cart fs-5"> <i class="fa-solid fa-cart-arrow-down"></i></a>
+                            </div>
+                            <p class="card-text fw-medium">This course will teach you Front End and turn you into a Front End developer.</p>
+                            <div class="input-group mb-3" data-bs-toggle="popover" data-bs-content="Coupon Copied"
+                                data-bs-placement="bottom">
+                                <input type="text" disabled class="form-control" placeholder="#H23JKK9DO"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <button class="btn rounded-end" id="basic-addon2" data-bs-placement="right" data-bs-toggle="modal"
+                                    data-bs-target="#copy1">Copy Coupon</button>
+                                <div class="modal fade model-copy" id="copy1" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="margin-top: 150px;">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Coupon Copied Successfully</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  p-1 mb-2">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course2.jpg" class="card-img-top" alt="course2">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bolder mb-3"><a href="#" class="text-decoration-none">UI/UX</a></h5>
+                            <div class="rate d-flex justify-content-between mb-2 ">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                                </div>
+                                <a href="#" class="cart fs-5"> <i class="fa-solid fa-cart-arrow-down"></i></a>
+                            </div>
+                            <p class="card-text fw-medium">This course will teach you UI/UX and turn you into a UI/UX developer.</p>
+                            <div class="input-group mb-3" data-bs-toggle="popover" data-bs-content="Coupon Copied" data-bs-placement="bottom">
+                                <input type="text" disabled class="form-control" placeholder="#H23JKL9DO"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <button class="btn rounded-end" id="basic-addon2" data-bs-placement="right" data-bs-toggle="modal"
+                                    data-bs-target="#copy2">Copy Coupon</button>
+                                <div class="modal fade model-copy" id="copy2" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="margin-top: 150px;">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Coupon Copied Successfully</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  p-1 mb-2">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course3.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bolder mb-3 "><a href="#" class="text-decoration-none">Back End</a></h5>
+                            <div class="rate d-flex justify-content-between mb-2 ">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                                </div>
+                                <a href="#" class="cart fs-5"> <i class="fa-solid fa-cart-arrow-down"></i></a>
+                            </div>
+                            <p class="card-text fw-medium">This course will teach you Back End and turn you into a Back End developer. </p>
+                            <div class="input-group mb-3" data-bs-toggle="popover" data-bs-content="Coupon Copied" data-bs-placement="bottom">
+                                <input type="text" disabled class="form-control" placeholder="#H23JK19DO"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <button class="btn rounded-end" id="basic-addon2" data-bs-placement="right" data-bs-toggle="modal"
+                                    data-bs-target="#copy">Copy Coupon</button>
+                                <div class="modal fade model-copy" id="copy" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="margin-top: 150px;">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Coupon Copied Successfully</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /card -->
+                </div>
+            </div> <!--/row -->
+        </div> <!--/container -->
+    </section> <!-- /coupon -->
+     <!-- --------------------------------f-section--------------------------- -->
+    <section class="f-section mt-5 text-center d-flex flex-column justify-content-center">
+        <h2 class="text-white fs-1 fw-bolder mb-4">Start From Now</h2>
+        <button class="btn rounded w-25 mx-auto fs-5 fw-bolder text-white"> Get Started</button>
+    </section>
+    <!------------------------------------ course------------------------------ -->
+    <section class="course" style="margin-top: 100px;">
+        <div class="container text-center">
+            <h2 class="fs-1 fw-bolder mb-4 w-25  rounded border-end border-bottom border-4 mx-auto text-center course-title mb-5 p-2"style="background-color: rgb(239, 246, 254);color: rgb(47, 42, 85);">
+                Courses <span><i class="fa-solid fa-laptop-code"></i></span>
+            </h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course4.png" class="card-img-top" alt="course4">
+                        <div class="card-body">
+                            <h6 class="card-title d-flex justify-content-between mb-4">
+                                <div class="card-title-l"> <span><i class="fa-solid fa-user"></i></span> Beginner </div>
+                                <div class="card-title-l"> <span><i class="fa-solid fa-clock"></i></span> 3h 15m</div>
+                            </h6>
+                            <h6 class="card-text mb-4">The Complete HTML BootCamp.</h6>
+                            <a href="#" class="btn fw-medium">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course5.jpg" class="card-img-top" alt="course5">
+                        <div class="card-body">
+                            <h6 class="card-title d-flex justify-content-between mb-4">
+                                <div class="card-title-l"> <span><i class="fa-solid fa-user"></i></span> Beginner </div>
+                                <div class="card-title-l"> <span><i class="fa-solid fa-clock"></i></span> 2h 30m</div>
+                            </h6>
+                            <h6 class="card-text mb-4">The Complete CSS BootCamp.</h6>
+                            <a href="#" class="btn fw-medium">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course6.png" class="card-img-top" alt="course6">
+                        <div class="card-body">
+                            <h6 class="card-title d-flex justify-content-between mb-4">
+                                <div class="card-title-l"> <span><i class="fa-solid fa-user"></i></span> Beginner </div>
+                                <div class="card-title-l"> <span><i class="fa-solid fa-clock"></i></span> 5h 15m</div>
+                            </h6>
+                            <h6 class="card-text mb-4">The Complete JS BootCamp.</h6>
+                            <a href="#" class="btn fw-medium">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course7.png" class="card-img-top" alt="course7">
+                        <div class="card-body">
+                            <h6 class="card-title d-flex justify-content-between mb-4">
+                                <div class="card-title-l"> <span><i class="fa-solid fa-user"></i></span> Beginner </div>
+                                <div class="card-title-l"> <span><i class="fa-solid fa-clock"></i></span> 3h 15m</div>
+                            </h6>
+                            <h6 class="card-text mb-4">The Complete UI/UX BootCamp.</h6>
+                            <a href="#" class="btn fw-medium">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course8.png" class="card-img-top" alt="course8">
+                        <div class="card-body">
+                            <h6 class="card-title d-flex justify-content-between mb-4">
+                                <div class="card-title-l"> <span><i class="fa-solid fa-user"></i></span> Advanced </div>
+                                <div class="card-title-l"> <span><i class="fa-solid fa-clock"></i></span> 5h 15m</div>
+                            </h6>
+                            <h6 class="card-text mb-4">The Complete API Course.</h6>
+                            <a href="#" class="btn fw-medium">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course9.png" class="card-img-top" alt="course9">
+                        <div class="card-body">
+                            <h6 class="card-title d-flex justify-content-between mb-4">
+                                <div class="card-title-l"> <span><i class="fa-solid fa-user"></i></span> Advanced </div>
+                                <div class="card-title-l"> <span><i class="fa-solid fa-clock"></i></span> 2h 15m</div>
+                            </h6>
+                            <h6 class="card-text mb-4">Advanced CSS Course</h6>
+                            <a href="#" class="btn fw-medium">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course10.jpg" class="card-img-top" alt="course10">
+                        <div class="card-body">
+                            <h6 class="card-title d-flex justify-content-between mb-4">
+                                <div class="card-title-l"> <span><i class="fa-solid fa-user"></i></span> Beginner </div>
+                                <div class="card-title-l"> <span><i class="fa-solid fa-clock"></i></span> 56h 30m</div>
+                            </h6>
+                            <h6 class="card-text mb-4">The Complete Full Stack Course.</h6>
+                            <a href="#" class="btn fw-medium">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course11.png" class="card-img-top" alt="course11">
+                        <div class="card-body">
+                            <h6 class="card-title d-flex justify-content-between mb-4">
+                                <div class="card-title-l"> <span><i class="fa-solid fa-user"></i></span> Advanced </div>
+                                <div class="card-title-l"> <span><i class="fa-solid fa-clock"></i></span> 20h 5m</div>
+                            </h6>
+                            <h6 class="card-text mb-4">The Complete Back End Course.</h6>
+                            <a href="#" class="btn fw-medium">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="Images/course12.png" class="card-img-top" alt="course12">
+                        <div class="card-body">
+                            <h6 class="card-title d-flex justify-content-between mb-4">
+                                <div class="card-title-l"> <span><i class="fa-solid fa-user"></i></span> Beginner </div>
+                                <div class="card-title-l"> <span><i class="fa-solid fa-clock"></i></span> 5h 15m</div>
+                            </h6>
+                            <h6 class="card-text mb-4">The Complete React Course.</h6>
+                            <a href="#" class="btn fw-medium">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------------f2-section------------------------------------- -->
+    <section class="f2-section f-section mt-5 text-center d-flex flex-column justify-content-center">
+        <h2 class="text-white fs-1 fw-bolder mb-4">Improve Your Skills</h2>
+        <button class="btn rounded w-25 mx-auto fs-5 fw-bolder text-white"> Get Started</button>
+    </section>
+    <!-- --------------------------------------------Team--------------------------------------------- -->
+    <section class="our-team mt-5 w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mt-4 p-4 text-white rounded mx-auto team team1 d-flex flex-column  justify-content-between"
+                        style="width: 23rem;height:360px;">
+                        <div class="team-content z-3">
+                            <h6 class="fw-bolder">All Thanks and Appreciation</h6>
+                            <h6><i class="fa-solid fa-clock m-1"></i> January 25, 2020</h6>
+                        </div>
+                        <div class="team-content z-3">
+                            <img class="rounded-circle" src="Images/team-1.jpg" alt="Team1" width="30%">
+                            <p class="fw-bolder fs-6 mb-0">Anita Letterback</p>
+                            <p class="mb-0 fw-medium">Back End</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mt-4 p-4 text-white  rounded shadow mx-auto team team2 d-flex flex-column  justify-content-between"
+                        style="width: 23rem;height:360px;">
+                        <div class="team-content z-3">
+                            <h6 class="fw-bolder">All Thanks and Appreciation</h6>
+                            <h6><i class="fa-solid fa-clock m-1"></i> October 15, 2020</h6>
+                        </div>
+                        <div class="team-content z-3">
+                            <img class="rounded-circle" src="Images/team-2.jpg" alt="Team2" width="30%">
+                            <p class="fw-bolder fs-6 mb-0">Chris Anthemum</p>
+                            <p class="mb-0 fw-medium">Full Stack</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mt-4 p-4  text-white rounded shadow mx-auto team team3 d-flex flex-column  justify-content-between"
+                        style="width: 23rem;height:360px;">
+                        <div class="team-content z-3">
+                            <h6 class="fw-bolder">All Thanks and Appreciation</h6>
+                            <h6><i class="fa-solid fa-clock m-1"></i> November 20, 2020</h6>
+                        </div>
+                        <div class="team-content z-3">
+                            <img class="rounded-circle"
+                                src="Images/team-3.jpg" alt="Team3" width="30%">
+                            <p class="fw-bolder fs-6 mb-0">Hugh Mannerizorsa</p>
+                            <p class="mb-0 fw-medium">Front End</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------------Podcast--------------------------------------------------- -->
+    <section class="podcast mb-5" style="margin-top: 100px">
+        <div class="container">
+            <h2 class="podcast-title text-center fw-bolder mx-auto w-25 mb-5" style="color:rgb(47, 42, 85);">More About Courses</h2>
+            <div class="col">
+                <div class="card mb-5 border-0 shadow " style="height: 370px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-sm-12 podcast-card-img podcast-card-img1">
+                            <img src="Images/front.jpg" class="img-fluid rounded-start" alt="Front End">
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="card-body mt-5 pe-5 lh-base" style="margin-left: -100px;">
+                                <h3 class=" card-title fw-bolder">Front End</h3>
+                                <h6 class="fw-bolder"><i class="fa-solid fa-calendar-days podcast-icon"> </i> Sun, January 25th 2020</h6>
+                                <div class="line mb-4"></div>
+                                <p class="fw-medium mb-5">interface of a web application or website. It involvesdesigning 
+                                    and coding the visual elements that users see and interact with, such as menus,buttons,
+                                    forms, images,and animations. Front end developers use various technologies such as HTML, CSS,
+                                    JavaScript,and frameworks like React, Angular, or Vue to build responsive and dynamic web pages.
+                                </p>
+                                <h6 class="card-footer-icons"><span class="p-2 rounded d-none d-md-inline">
+                                    <i class="fa-solid fa-tags podcast-icon"></i> Podcast</span>
+                                    <span class="p-2  rounded"><i class="fa-solid fa-clock podcast-icon"></i> 55 min</span>
+                                    <span class="p-2  rounded"><i class="fa-solid fa-play podcast-icon"></i> Play Episode</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-5 border-0 shadow" style="width: 100%; height: 370px;">
+                    <div class="row g-0">
+                        <div class="col-md-8 col-sm-12 order-md-1 order-2">
+                            <div class="card-body mt-5 ml-5 lh-base" style="margin-left: 70px;">
+                                <h3 class=" card-title fw-bolder">Back End</h3>
+                                <h6 class="fw-bolder"><i class="fa-solid fa-calendar-days podcast-icon"> </i> Mon, January 26th 2020</h6>
+                                <div class="line mb-4"></div>
+                                <p class="fw-medium mb-5">Back-end development is the process of creating the
+                                    server-side logic and functionality of a website or application. It involves working with
+                                    databases, scripting languages, APIs, and servers to handle user requests and deliver data in a readable format.
+                                </p>
+                                <h6 class="card-footer-icons"><span class="p-2 rounded d-none d-md-inline">
+                                    <i class="fa-solid fa-tags podcast-icon"></i> Podcast</span>
+                                    <span class="p-2  rounded"><i class="fa-solid fa-clock podcast-icon"></i> 55 min</span>
+                                    <span class="p-2  rounded"><i class="fa-solid fa-play podcast-icon"></i> Play Episode</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-4 col-sm-12  podcast-card-img podcast-card-img2 text-end  order-md-2 order-1">
+                            <img src="Images/team-2.jpg" class="img-fluid rounded-end" alt="Back End">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-5 border-0 shadow" style="width: 100% ;height: 370px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-sm-12 podcast-card-img podcast-card-img1">
+                            <img src="Images/team-3.jpg" class="img-fluid rounded-start" alt="UI/UX">
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="card-body mt-5 pe-5 lh-base" style="margin-left: -100px;">
+                                <h3 class=" card-title fw-bolder">UI/UX</h3>
+                                <h6 class="fw-bolder"><i class="fa-solid fa-calendar-days podcast-icon"> </i> Sun, October 9th 2020</h6>
+                                <div class="line mb-4"></div>
+                                <p class="fw-medium mb-5">UX design focuses on creating a
+                                    seamless and meaningful user experience by understanding user needs, conducting
+                                    research, and designing intuitive interfaces, while UI design focuses on the visual,
+                                    interactive elements of a product to create aesthetically-pleasing interfaces.
+                                </p>
+                                <h6 class="card-footer-icons"><span class="p-2 rounded d-none d-md-inline">
+                                <i class="fa-solid fa-tags podcast-icon"></i> Podcast</span>
+                                    <span class="p-2  rounded"><i class="fa-solid fa-clock podcast-icon"></i> 55 min</span>
+                                    <span class="p-2  rounded"><i class="fa-solid fa-play podcast-icon"></i> Play Episode</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-5 border-0 shadow" style="width: 100% ;height: 370px;">
+                    <div class="row g-0">
+                        <div class="col-md-8 col-sm-12 order-md-1 order-2">
+                            <div class="card-body mt-5 ml-5 lh-base" style="margin-left: 70px;">
+                                <h3 class=" card-title fw-bolder">Node JS</h3>
+                                <h6 class="fw-bolder"><i class="fa-solid fa-calendar-days podcast-icon"></i> Mon, October 10th 2020</h6>
+                                <div class="line mb-4"></div>
+                                <p class="fw-medium mb-5">Node.js is a JavaScript runtime built on Chrome's V8
+                                    JavaScript engine. It is used for building scalable network applications and is an open-source,
+                                    cross-platform runtime environment that allows developers to build server-side applications in JavaScript.
+                                </p>
+                                <h6 class="card-footer-icons"><span class="p-2 rounded d-none d-md-inline">
+                                    <i  class="fa-solid fa-tags podcast-icon"></i> Podcast</span>
+                                    <span class="p-2  rounded"><i class="fa-solid fa-clock podcast-icon"></i> 55 min</span>
+                                    <span class="p-2  rounded"><i class="fa-solid fa-play podcast-icon"></i> Play Episode</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 podcast-card-img podcast-card-img2 text-end order-md-2 order-1">
+                            <img src="Images/team-1.jpg" class="img-fluid rounded-end" alt="Node Js">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------Join------------------------------------------------------------------ -->
+    <section class="join" style="margin: 100px 0;">
+        <div class="container text-center">
+            <h2 class="fs-2 fw-bolder w-25 mx-auto join-title ">Join Us Now </h2>
+            <div class="line mx-auto mb-5"></div>
+            <div class="row">
+                <div class="col-md-3 mx-auto">
+                    <div class="join-item1 m-3 p-4 rounded">
+                        <h5 class="fw-bolder">Follow</h5>
+                        <a href="#"><i class="  fs-1  fa-brands fa-facebook"></i></a>
+                        <a href="#" class="fw-bolder d-block text-white text-decoration-none">Go To Link</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <div class="join-item1 m-3 p-4 rounded">
+                        <h5 class="fw-bolder">Follow</h5>
+                        <a href="#"><i class=" fs-1  fa-brands fa-twitter"></i></a>
+                        <a href="#" class="fw-bolder d-block text-white text-decoration-none">Go To Link</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <div class="join-item1  m-3 p-4 rounded">
+                        <h5 class="fw-bolder">Follow</h5>
+                        <a href="#"><i class=" fs-1  fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="fw-bolder d-block text-white text-decoration-none">Go To Link</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-auto">
+                    <div class="join-item1  m-3 p-4 rounded">
+                        <h5 class="fw-bolder">Follow</h5>
+                        <a href="#"><i class=" fs-1  fa-brands fa-youtube"></i></a>
+                        <a href="#" class="fw-bolder d-block text-white text-decoration-none">Go To Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- ---------------------------------footer------------------------------------------------ -->
+    <footer style="margin-top: 70px;background-color:rgb(239, 246, 254);" class="p-4">
+        <div class="container text-center p-2">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group list-group-flush border-top border-bottom">
+                        <a href="#" class="border-bottom p-3"><img src="Images/logo.png" alt="logo"></a>
+                        <li class="list-group-item">
+                            <a class="fw-bolder text-decoration-none">Tel 001 231 098</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="fw-bolder text-decoration-none">Mob 011 231 098</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="fw-bolder text-decoration-none">Fax 010 123 908</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-group list-group-flush border-top border-bottom">
+                        <a href="#" class="border-bottom p-3"><img src="Images/logo.png" alt="logo"></a>
+                        <li class="list-group-item">
+                            <a class="fw-bolder text-decoration-none">Home</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="fw-bolder text-decoration-none">Pricing</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="fw-bolder text-decoration-none">Compare plans</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-group list-group-flush border-top border-bottom">
+                        <a href="#" class="border-bottom p-3"><img src="Images/logo.png" alt="logo"></a>
+                        <li class="list-group-item">
+                            <a class="fw-bolder text-decoration-none">Academy</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="fw-bolder text-decoration-none">Weekly webinar</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="fw-bolder text-decoration-none">Free eBooks & checklists</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h6 class="w-100  mt-5" style="color: rgb(28, 176, 152);"> © 2023 Copyright</h6>
+        </div>
+    </footer>
+    <script src="JS/poper.js"></script>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/bootstrap.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
